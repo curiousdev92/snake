@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "ready": "vp check && vp run -r test && vp run -r build",
-    "dev": "vp run website#dev",
+    "game": "vp run game#dev",
     "prepare": "vp config"
+  },
+  "dependencies": {
+    "utils": "workspace:*"
   },
   "devDependencies": {
     "vite": "catalog:",
